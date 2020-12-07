@@ -1,3 +1,29 @@
-body{
-    background-color: aquamarine;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
 }
+
+/* navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8e8e8;
+  }
+  
+  .navlinks ul {
+    display: flex;
+  }
+  
+  .navlinks ul li {
+    list-style: none;
+    justify-content: flex-end;
+  }
+  
+  .navlinks ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 2em;
+  }
