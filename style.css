@@ -7,23 +7,63 @@ body {
 
 /* navbar */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e8e8e8;
-  }
-  
-  .navlinks ul {
-    display: flex;
-  }
-  
-  .navlinks ul li {
-    list-style: none;
-    justify-content: flex-end;
-  }
-  
-  .navlinks ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 2em;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlinks ul {
+  display: flex;
+}
+
+.navlinks ul li {
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.navlinks ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 2em;
+}
+
+/* hero intro */
+.hero-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12em;
+}
+
+.hero-intro h1 {
+  font-size: 2.5em;
+}
+.hero-intro p {
+  padding-top: 1em;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e7e7e7;
+  border: none;
+  color: black;
+  padding: 16px 30px;
+  margin: 1.5em 0;
+  border-radius: 1.5em;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  box-shadow: 0 12px 12px 0 rgba(218, 215, 215, 0.24), 0 5px 5px 0;
+}
+
+.my-pic {
+  position: relative;
+}
