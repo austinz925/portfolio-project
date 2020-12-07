@@ -67,3 +67,37 @@ body {
 .my-pic {
   position: relative;
 }
+
+/* skill section */
+.skills-container {
+  display: block;
+  width: 70%;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.html {
+  width: 70%;
+  background-color: whitesmoke;
+}
+.css {
+  width: 50%;
+  background-color: whitesmoke;
+}
+.js {
+  width: 10%;
+  background-color: whitesmoke;
+}
+
+/* footer */
+.footer-section {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
