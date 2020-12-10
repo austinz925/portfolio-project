@@ -44,24 +44,7 @@ body {
 }
 
 .btn {
-  display: inline-block;
-  background-color: #e7e7e7;
   border: none;
-  color: black;
-  padding: 16px 30px;
-  margin: 1.5em 0;
-  border-radius: 1.5em;
-  font-size: 16px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none;
-  color: black;
-}
-
-.btn:hover {
-  background-color: whitesmoke;
-  box-shadow: 0 12px 12px 0 rgba(218, 215, 215, 0.24), 0 5px 5px 0;
 }
 
 .my-pic {
@@ -69,9 +52,10 @@ body {
 }
 
 /* skill section */
-.skills-container {
+#skills-container {
   display: flex;
   flex-direction: row-reverse;
+  padding-top: 200px;
 }
 
 .about-me {
@@ -107,104 +91,63 @@ body {
 }
 
 /* Projects */
-:root {
-  --background-dark: #2d3548;
-  --text-light: rgba(255, 255, 255, 0.6);
-  --text-lighter: rgba(255, 255, 255, 0.9);
-  --spacing-s: 8px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --width-container: 900px;
+#projects {
+  padding-top: 200px;
+}
+h2 {
+  text-align: center;
 }
 
-.projects {
-  align-items: flex-start;
-  display: flex;
-  min-height: 100%;
-  justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
+/* contact me */
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+  padding-top: 200px;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
+.feedback-input {
+  font-weight: 100;
+  font-size: 15px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #e7e7e7;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
   width: 100%;
+  box-sizing: border-box;
+  outline: 0;
 }
 
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.feedback-input:focus {
+  border: 2px solid #e7e7e7;
 }
 
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
 }
 
-.card {
-  list-style: none;
-  position: relative;
-}
-
-.card:before {
-  content: "";
-  display: block;
-  padding-bottom: 150%;
+[type="submit"] {
   width: 100%;
+  background: #e7e7e7;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
 }
-
-.card__background {
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--spacing-l);
-  bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform-origin: center;
-  transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
+[type="submit"]:hover {
+  background: black;
 }
-
-.card:hover .card__background {
-  transform: scale(1.05) translateZ(0);
-}
-
-.card-grid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-}
-
-.card__content {
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-}
-
-.card__category {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
-}
-
-.card__heading {
-  color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px gainsboro;
-  line-height: 1.4;
-  word-spacing: 100vw;
-}
-
 /* footer */
 .footer-section {
   left: 0;
