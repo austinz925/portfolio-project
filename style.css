@@ -7,7 +7,6 @@ body {
 
 /* navbar */
 
-
 /* hero intro */
 .hero-container {
   display: flex;
@@ -139,20 +138,20 @@ textarea {
   text-align: center;
 }
 
-
- 
 @media only screen and (max-width: 768px) {
-     .hero-container {
-       display: flex;
-       flex-direction: column;
-     }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-     #skills-container {
-       display: flex;
-       flex-direction: column;
-     }
-     
-     .about-me {
-       padding-left: 100px;
-     }
-} 
+  #skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-bar {
+    padding-left: 30px;
+    margin-top: 5rem;
+  }
+}
