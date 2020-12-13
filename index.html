@@ -10,14 +10,26 @@
   </head>
   <body>
     <!-- nav bar -->
-    <nav class="navbar">
-      <div class="logo"><img src="https://mail.google.com/mail/u/0?ui=2&ik=eb22b65ad7&attid=0.1&permmsgid=msg-a:r4226342138581400335&view=att&disp=safe&realattid=f_ki7d9x440" alt="logo" width="50px" /></div>
-      <div class="navlinks">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#skills-container">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="https://mail.google.com/mail/u/0?ui=2&ik=eb22b65ad7&attid=0.1&permmsgid=msg-a:r4226342138581400335&view=att&disp=safe&realattid=f_ki7d9x440" alt="logo" width="50px" /></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-container">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>

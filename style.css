@@ -6,26 +6,7 @@ body {
 }
 
 /* navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.navlinks ul {
-  display: flex;
-}
-
-.navlinks ul li {
-  list-style: none;
-  justify-content: flex-end;
-}
-
-.navlinks ul li a {
-  text-decoration: none;
-  color: black;
-  padding: 2em;
-}
 
 /* hero intro */
 .hero-container {
@@ -159,5 +140,19 @@ textarea {
 }
 
 
-/* @media only screen and (max-width: 768px) */
-      
+ 
+@media only screen and (max-width: 768px) {
+     .hero-container {
+       display: flex;
+       flex-direction: column;
+     }
+
+     #skills-container {
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .about-me {
+       padding-left: 100px;
+     }
+} 
