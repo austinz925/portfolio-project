@@ -1,0 +1,6 @@
+#Correct the images 
+##Correct the skill bar
+###Use real texts
+####Add color to the footer bg
+#####Link contact me button
+######Modify the design generally
